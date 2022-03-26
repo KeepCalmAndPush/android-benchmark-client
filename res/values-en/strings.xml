@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Benchmark</string>
+    
+    <string name="action_settings">Choose a server</string>
+    <string name="action_reset">Reset results</string>
+    
+    <string name="worlds_results">Nearest results:</string>
+    <string name="results_over_lavr">Your result:</string>
+    <string name="stars">******</string>
+    <string name="int_tag">int</string>
+    <string name="float_tag">float</string>
+    <string name="double_tag">double</string>
+    <string name="main_button_estimate">Estimate!</string>
+    <string name="main_button_calculation_in_progress">Calculations...</string>
+    <string name="main_button_submit_results">Submit results!</string>
+    <string name="main_button_show_results">Show results!</string>
+    
+    <string name="error">Error</string>
+    <string name="error_no_internet_connection">Check your Internet connection.</string>
+    <string name="error_server_fault">Server interaction error.</string>
+    
+    <string name="wait">Wait...</string>
+    <string name="wait_server_connection">Connecting to the server.</string>
+     
+    <string name="choose_server">Server details</string>
+    <string name="choose_server_URL">URL:</string>
+    <string name="choose_server_operation">Operation:</string>
+     
+    <string name="OK">OK</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="your_device">Your device</string>
+    <string name="title_activity_draw">Similar devices</string>
+</resources>

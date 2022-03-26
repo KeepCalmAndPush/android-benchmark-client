@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Бенчмарк</string>
+    
+    <string name="action_settings">Указать сервер</string>
+    <string name="action_reset">Сбросить результаты</string>
+    
+    <string name="worlds_results">Ближайшие результаты:</string>
+    <string name="results_over_lavr">Результат:</string>
+    <string name="stars">******</string>
+    <string name="int_tag">int</string>
+    <string name="float_tag">float</string>
+    <string name="double_tag">double</string>
+    <string name="main_button_estimate">Замерить!</string>
+    <string name="main_button_calculation_in_progress">Вычисления...</string>
+    <string name="main_button_submit_results">Отправить результаты!</string>
+    <string name="main_button_show_results">Посмотреть результаты!</string>
+    
+    <string name="error">Ошибка</string>
+    <string name="error_no_internet_connection">Проверьте подключение к интернету.</string>
+    <string name="error_server_fault">Ошибка работы сервера.</string>
+    
+    <string name="wait">Подождите...</string>
+    <string name="wait_server_connection">Соединение с сервером.</string>
+     
+    <string name="choose_server">Выбор сервера</string>
+    <string name="choose_server_URL">URL сервера:</string>
+    <string name="choose_server_operation">Операция:</string>
+     
+    <string name="OK">OK</string>
+    <string name="cancel">Отмена</string>
+
+    <string name="your_device">Это устройство</string>
+    <string name="title_activity_draw">Cхожие устройства</string>
+</resources>

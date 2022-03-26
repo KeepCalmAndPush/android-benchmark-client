@@ -1,0 +1,139 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity" >
+
+    <RelativeLayout
+        android:id="@+id/mainRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/splashImageView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/splash"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/resultTagTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/splashImageView"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:text="@string/results_over_lavr"
+            android:textSize="@dimen/text_medium" />
+
+        <ImageView
+            android:id="@+id/lavrImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/resultTagTextView"
+            android:layout_gravity="center_horizontal"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/lavr2" />
+
+        <TextView
+            android:id="@+id/modelTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lavrImageView"
+            android:layout_centerHorizontal="true"
+            android:gravity="clip_horizontal"
+            android:textSize="@dimen/text_model" />
+
+        <TableLayout
+            android:id="@+id/intermediateResultsTableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/modelTextView" >
+
+            <TableRow
+                android:id="@+id/progressTableRow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_vertical_margin" >
+
+                <TextView
+                    android:id="@+id/intProgressTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/benchmark_green"
+                    android:gravity="center_horizontal"
+                    android:text="@string/stars"
+                    android:textSize="@dimen/text_medium" />
+
+                <TextView
+                    android:id="@+id/floatProgressTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/benchmark_yellow"
+                    android:gravity="center_horizontal"
+                    android:text="@string/stars"
+                    android:textSize="@dimen/text_medium" />
+
+                <TextView
+                    android:id="@+id/doubleProgressTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/benchmark_red"
+                    android:gravity="center_horizontal"
+                    android:text="@string/stars"
+                    android:textSize="@dimen/text_medium" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tagsTableRow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/intTagTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/int_tag" />
+
+                <TextView
+                    android:id="@+id/floatTagTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/float_tag" />
+
+                <TextView
+                    android:id="@+id/doubleTagTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/double_tag" />
+            </TableRow>
+        </TableLayout>
+
+        <Button
+            android:id="@+id/mainButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/intermediateResultsTableLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:onClick="onMainButtonClicked"
+            android:text="@string/main_button_estimate" />
+    </RelativeLayout>
+
+</ScrollView>
